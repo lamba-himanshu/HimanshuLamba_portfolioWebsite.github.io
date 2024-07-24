@@ -17,26 +17,26 @@ window.addEventListener("scroll", function() {
 
 //project section -modal
 const projectModals = document.querySelectorAll(".project-modal");
-const moreBtns = document.querySelectorAll(".project-details-btn");
-const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
+const projectCards = document.querySelectorAll(".project-card");
+const projectCloseBtns = document.querySelectorAll(".modal-close-btn");
 
-var modal = function (modalClick) {
+var projectModal = function (modalClick) {
     projectModals[modalClick].classList.add("active");
 };
 
-moreBtns.forEach((moreBtn, i)=>{
-    moreBtn.addEventListener('click', ()=> {
-        modal(i);
+projectCards.forEach((projectCards, i)=>{
+    projectCards.addEventListener('click', ()=> {
+        projectModal(i);
     })
     
 });
 
-modalCloseBtns.forEach((modalCloseBtn)=>{
-    modalCloseBtn.addEventListener('click',()=>{
-        projectModals.forEach((modalView) => {
-            modalView.classList.remove('active');
+projectCloseBtns .forEach((projectCloseBtns )=>{
+    projectCloseBtns.addEventListener('click',()=>{
+        projectModals.forEach((projectModalView) => {
+            projectModalView.classList.remove('active');
         });
-    })
+    });
 });
 
 //website dark/light theme button
@@ -111,3 +111,23 @@ window.addEventListener("scroll", () => {
     });
 });
 
+//responsive  navigation menu toogle
+
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+const navItems = document.querySelectorAll(".nav-items a");
+
+menuBtn.addEventListener("click",()=>{
+    navigation.classList.add("active");
+});
+
+closeBtn.addEventListener("click",()=>{
+    navigation.classList.remove("active");
+});
+
+navItems.forEach((navItem) => {
+    navItem.addEventListener("click",()=>{
+        navigation.classList.remove("active");
+    });
+});
