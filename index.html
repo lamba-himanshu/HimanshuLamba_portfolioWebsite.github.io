@@ -6,8 +6,21 @@
     <title>Himanshu Lamba</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
+
+    <!-- Scroll To Top button -->
+     <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+     </div>
+
+
+     <!-- light / dark theme button -->
+      <div class="theme-btn">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </div>
     
     <!--Header-->
     <header>
@@ -15,7 +28,7 @@
             <a href="#" class="logo"> Himanshu Lamba</a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#">Home</a>
+                    <a class="active" href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
@@ -26,7 +39,7 @@
     </header>
 
     <!-- HOme section-->
-     <section class="home flex-container id="home">
+     <section class="home flex-container"id="home">
         <div class="home-container">
             <div class="media-icons">
                 <a href="https://github.com/lamba-himanshu"><i class="fab fa-github"></i></a>
@@ -37,7 +50,7 @@
                 <h2>Hi, I am Himanshu Lamba</h2>
                 <h3>And I'm a <span class="text"></span></h3>
                 <p>I'm a fervent coder specializing in frontend development and Java, with a knack for creating dynamic and responsive web applications.</p>
-                <a href="" class="btn">Contact Me <i class="fas fa-arrow-circle-right"> </i>  </a>
+                <a href="#contact" class="btn">Contact Me <i class="fas fa-arrow-circle-right"> </i>  </a>
             </div>
             <div class="home-img">
                 <img src="images/p-img.png" alt="">
@@ -181,7 +194,7 @@
                         <div class="project-card">
                             <img src="images/chatPic.jpg" alt="Project 1">
                             <h3>MultiUser Chat Apllication</h3>
-                            <p>"MultiTalk" is a simple chat application that allows users to communicate with each other in real-time.</p>
+                            <!-- <p>"MultiTalk" is a simple chat application that allows users to communicate with each other in real-time.</p> -->
                             <div class="project-details-btn">
                                 More  <i class="fas fa-long-arrow-alt-right"></i>
                             </div>
@@ -205,7 +218,7 @@
                         <div class="project-card">
                             <img src="images/weather-img.jpg" alt="Project 2">
                             <h3>Weather Apllication</h3>
-                            <p>A simple weather application to fetch and display real-time weather data for a specified city.</p>
+                            <!-- <p>A simple weather application to fetch and display real-time weather data for a specified city.</p> -->
                             <div class="project-details-btn">
                                 More  <i class="fas fa-long-arrow-alt-right"></i>
                             </div>
@@ -282,7 +295,7 @@
                             <span><a href="mailto:himanshulamba002@gmail.com">himanshulamba002@gmail.com</a></span>
                         </li>
                         <li >
-                            <h3 class="item-title"><i class="fas fa-phone"></i>official Address</h3>
+                            <h3 class="item-title"><i class="fas fa-phone"></i>Official Address</h3>
                             <span>Mussoorie Diversion Road, Dehradun, Uttarakhand 248009</span>
                         </li>
                     </ul>
@@ -311,6 +324,8 @@
     <footer>
         <div class="footer-container">
             <div class="about group">
+                <h2>Himanshu Lamba</h2>
+                <p>Front-end Developer</p>
                 <a href="#about">About Me</a>
             </div>
             <div class="hr"></div>
@@ -319,7 +334,7 @@
                     <ul>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact"></a>Contact</li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href=""></a></li>
                     </ul>
                 </div>
