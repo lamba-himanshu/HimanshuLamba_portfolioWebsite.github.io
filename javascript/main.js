@@ -39,6 +39,7 @@ projectCloseBtns .forEach((projectCloseBtns )=>{
     });
 });
 
+
 //website dark/light theme button
 
 const themeBtn = document.querySelector(".theme-btn");
@@ -89,7 +90,7 @@ const observer = new IntersectionObserver(function(entries) {
 observer.observe(footerContainer);
 
 
-scrollTopBtn.addEventListener("click", function(){
+scrollTopBtn.addEventListener("click", ()=>{
     document.body.scrollTop=0;
     document.documentElement.scrollTop=0;
 });
@@ -147,6 +148,6 @@ ScrollReveal().reveal('.home .info .btn, .home .scroll-down', {delay:700 , origi
 ScrollReveal().reveal('.media-icons i, .contact-left li', {delay:500 , origin: 'left',interval:200});
 ScrollReveal().reveal('.home-img ,.about-img', {delay:500 , origin: 'bottom'});
 ScrollReveal().reveal('.about .description,.contact-right', {delay:600 , origin: 'right'});
-ScrollReveal().reveal('.skills-description, .content-left ', {delay:700 , origin: 'left'});
+ScrollReveal().reveal('.skills-description, .contact-left ', {delay:700 , origin: 'left'});
 ScrollReveal().reveal('.education, .projects .project-card', {delay:800 , origin: 'bottom', interval: 200});
 ScrollReveal().reveal('footer, .group', {delay:500 , origin: 'top', interval: 200});
