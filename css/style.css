@@ -983,9 +983,11 @@ footer a{
     /* footer */
     footer .footer-container{
         flex-direction: column;
+    
     }
 
-    .footer-container .about, .footer-container .info{
+    .footer-container .about, 
+    .footer-container .info{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1010,7 +1012,7 @@ footer a{
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 730px) {
     /* common styles for all sections */
     body{
         margin: 5rem 0 0 0 ;
