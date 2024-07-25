@@ -78,9 +78,9 @@ const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             scrollTopBtn.style.backgroundColor = "#fff";
-            scrollTopArrow.style.color = "#6a59d1";
+            scrollTopArrow.style.color = "#008080";
         } else {
-            scrollTopBtn.style.backgroundColor = "#6a59d1"; // Reset to original color or set another color
+            scrollTopBtn.style.backgroundColor = "#008080"; // Reset to original color or set another color
             scrollTopArrow.style.color = "#fff";
         }
     });

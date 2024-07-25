@@ -3,11 +3,11 @@
 :root{
     /* MAin theme colors*/
     --first-color: #0e2431;
-    --second-color: #6a59d1;
+    --second-color: #008080;
     --third-color : #777;
 
     /* hover colors*/
-    --hover-color: #614fd0;
+    --hover-color: #034d4d;
 
     /*Background colors*/
     --body-bg-color: #fefefe;
@@ -38,7 +38,7 @@
 .dark-theme{
         /* MAin theme colors*/
         --first-color: #fff;
-        --second-color: #6a59d1;
+        --second-color: #008080;
         --third-color : #a9afc3;
     
         /*Background colors*/
