@@ -63,6 +63,7 @@ if(savedTheme){
 
 
 
+
 // scroll to top button
 const scrollTopBtn = document.querySelector('.scrollToTop-btn');
 const footerContainer = document.querySelector('.footer-container');
